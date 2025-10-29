@@ -10,7 +10,7 @@ ret, thresh = cv2.threshold(img_gray, 190, 255, cv2.THRESH_BINARY_INV)
 contours, hierarchy = cv2.findContours(thresh, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
 
 for cnt in contours:
-    print(cv2.contourArea(cnt))
+    #print(cv2.contourArea(cnt))
     if cv2.contourArea(cnt) > 5000:
        # cv2.drawContours(img, cnt, -1, (0, 255, 0),2)
         
